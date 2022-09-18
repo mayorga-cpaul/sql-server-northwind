@@ -187,6 +187,34 @@ SELECT * FROM Employees WHERE Region IS NULL
 ```
 ![null](https://user-images.githubusercontent.com/76973247/190886490-66015fa9-7734-4920-8d6e-61ac73bf1fb7.png)
 
+## **UPDATE**
 
+The SQL UPDATE Statement
+The UPDATE statement is used to modify the existing records in a table.
 
+UPDATE Syntax
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+Note: Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated!
+
+```
+USE Northwind
+GO 
+UPDATE Employees
+SET LastName = 'Lopez', Title = 'Sales Representative'
+WHERE EmployeeID = 5; 
+ ```
+## DELETE
+
+The SQL DELETE Statement
+The DELETE statement is used to delete existing records in a table.
+
+DELETE Syntax
+DELETE FROM table_name WHERE condition;
+`Note:` Be careful when deleting records in a table! Notice the WHERE clause in the DELETE statement. The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all records in the table will be deleted!
+
+ ```
+ DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+ ```
 
