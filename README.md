@@ -367,6 +367,70 @@ Here are some examples showing different LIKE operators with '%' and '_' wildcar
 |WHERE CustomerName LIKE 'a__%'	| Finds any values that starts with "a" and are at least 3 characters in length|
 |WHERE ContactName LIKE 'a%o'	| Finds any values that starts with "a" and ends with "o"|
 
+Using the % Wildcard
+The following SQL statement selects all customers with a City starting with "ber":
+
+Example
+
+```
+SELECT * FROM Customers
+WHERE City LIKE 'ber%';
+```
+
+The following SQL statement selects all customers with a City containing the pattern "es": 
+
+Example
+```
+SELECT * FROM Customers
+WHERE City LIKE '%es%';
+```
+
+Using the _ Wildcard
+The following SQL statement selects all customers with a City starting with any character, followed by "ondon":
+
+Example
+
+```
+SELECT * FROM Customers
+WHERE City LIKE '_ondon';
+```
+
+The following SQL statement selects all customers with a City starting with "L", followed by any character, followed by "n", followed by any character, followed by "on":
+
+Example
+
+```
+SELECT * FROM Customers
+WHERE City LIKE 'L_n_on';
+```
+
+Using the [charlist] Wildcard
+The following SQL statement selects all customers with a City starting with "b", "s", or "p":
+
+Example
+
+```
+SELECT * FROM Customers
+WHERE City LIKE '[bsp]%';
+```
+
+The following SQL statement selects all customers with a City starting with "a", "b", or "c":
+
+Example
+```
+SELECT * FROM Customers
+WHERE City LIKE '[a-c]%';
+```
+
+Using the [!charlist] Wildcard
+The two following SQL statements select all customers with a City NOT starting with "b", "s", or "p":
+
+Example
+```
+SELECT * FROM Customers
+WHERE City LIKE '[!bsp]%';
+```
+
 ## Key references in SQL
  ```
 In SQL, keywords are the reserved words that are used to perform various operations on the database. There are many keywords in SQL and since SQL is not case sensitive, it does not matter if we use, for example, SELECT or select. LIST OF SQL keywords
