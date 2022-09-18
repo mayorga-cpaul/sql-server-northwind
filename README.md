@@ -1,6 +1,33 @@
 ## Table of Contents
-1. [Studying SQL Server](#Studying-SQL-Server)
-2. [Select](#Select)
+
+* [Studying SQL Server](#Studying-SQL-Server)
+* [Select](#Select)
+* [The SQL SELECT DISTINCT Statement](#The-SQL-SELECT-DISTINCT-Statement)
+* [The SQL WHERE Clause](#The-SQL-WHERE-Clause)
+* [SQL ORDER BY Keyword](#SQL-ORDER-BY-Keyword)
+* [SQL INSERT INTO Statement](#SQL-INSERT-INTO-Statement)
+* [NULL values](#NULL-values)
+* [UPDATE](#UPDATE)
+* [DELETE](#DELETE)
+* [TOP](#TOP)
+* [SQL MIN and MAX functions()](#SQL-MIN-and-MAX-functions())
+* [SQL COUNT(), AVG() and SUM() Functions](#SQL-COUNT(),-AVG()-and-SUM()-Functions)
+* [LIKE Operator](#LIKE-Operator)
+* [SQL Wildcards](#SQL-Wildcards)
+* [SQL IN Operator](#SQL-IN-Operator)
+* [SQL BETWEEN Operator](#SQL-BETWEEN-Operator)
+* [SQL Aliases](#SQL-Aliases)
+* [SQL Joins](#SQL-Joins)
+* [SQL INNER JOIN Keyword](#SQL-INNER-JOIN-Keyword)
+* [SQL LEFT JOIN Keyword](#SQL-LEFT-JOIN-Keyword)
+* [SQL RIGHT JOIN Keyword](#SQL-RIGHT-JOIN-Keyword)
+* [SQL FULL OUTER JOIN Keyword](#SQL-FULL-OUTER-JOIN-Keyword)
+* [SQL Self Join](#SQL-Self-Join)
+* [The SQL UNION Operator](#The-SQL-UNION-Operator)
+* [Key references in SQL](#Key-references-in-SQL) 
+
+
+
 
 # **Studying SQL Server** 📝  
 
