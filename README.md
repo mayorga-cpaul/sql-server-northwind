@@ -100,3 +100,59 @@ SElECT * FROM Customers WHERE NOT City = 'Berlin'
 ```
 ![OR](https://user-images.githubusercontent.com/76973247/190881789-d153abaf-16e7-470f-930c-46725cff4ccd.png)
 
+## **SQL ORDER BY Keyword**
+
+Many functions have been implemented in SQL Server, among which ordering stands out 
+ `ORDER BY` there are two popular ways to sort ascending `ASC` and descending `DESC`
+ these are widely used when you want to take for examplee the highest price of a product then you could order such 
+ data in an `ASC` way and take the first
+ 
+ > `Note:` It should be noted that you can order by what suits you best
+
+
+* Order by value asc
+```
+USE Northwind
+GO
+
+SELECT LastName, FirstName, Address 
+FROM Employees 
+ORDER BY LastName ASC
+```
+![ORDER BY](https://user-images.githubusercontent.com/76973247/190886064-4b3647ee-2c5b-4368-a216-0e4fe059e53f.png)
+
+*  Order by value desc
+
+```
+USE Northwind
+GO
+
+SELECT LastName, FirstName, Address 
+FROM Employees 
+ORDER BY LastName DESC
+```
+![DESC](https://user-images.githubusercontent.com/76973247/190886047-72747938-4137-4beb-9828-1577fc7afb7b.png)
+
+
+## **SQL INSERT INTO Statement**
+
+The SQL INSERT INTO Statement
+The INSERT INTO statement is used to insert new records in a table.
+INSERT INTO Syntax
+It is possible to write the INSERT INTO statement in two ways:
+1. Specify both the column names and the values to be inserted:
+
+```
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+
+```
+USE Northwind
+GO
+
+INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
+VALUES (09999, 'Seattle', 2)
+```
+![INSERT INTO](https://user-images.githubusercontent.com/76973247/190886042-d17057d1-b85b-4a90-b2af-f87566b323be.png)
+
