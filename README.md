@@ -727,6 +727,20 @@ ON table1.column_name = table2.column_name
 WHERE condition;
 ```
 
+## **SQL FULL OUTER JOIN Keyword**
+The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
+
+Tip: FULL OUTER JOIN and FULL JOIN are the same.
+
+FULL OUTER JOIN Syntax
+```
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+```
+
 SQL FULL OUTER JOIN
 
 >Note: FULL OUTER JOIN can potentially return very large result-sets!
@@ -736,12 +750,12 @@ In this tutorial we will use the well-known Northwind sample database.
 
 Below is a selection from the "Customers" table:
 
-CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
-1
+|CustomerID|	CustomerName|	ContactName	|Address|	City|	PostalCode|	Country|
+| :------------ |:---------------|:---------------|:---------------|:---------------|:---------------|:---------------|
+|1| Alfreds Futterkiste	|Maria Anders|	Obere Str. 57|	Berlin|	12209|	Germany|
+|2|	Ana Trujillo Emparedados y helados	|Ana Trujillo|	Avda. de la Constitución 2222|	México D.F.|	05021	|Mexico|
+|3|	Antonio Moreno Taquería	|Antonio Moreno|	Mataderos 2312|	México D.F.|	05023	|Mexico|
 
-Alfreds Futterkiste	Maria Anders	Obere Str. 57	Berlin	12209	Germany
-2	Ana Trujillo Emparedados y helados	Ana Trujillo	Avda. de la Constitución 2222	México D.F.	05021	Mexico
-3	Antonio Moreno Taquería	Antonio Moreno	Mataderos 2312	México D.F.	05023	Mexico
 And a selection from the "Orders" table:
 
 |OrderID	|CustomerID|	EmployeeID|	OrderDate|	ShipperID|
