@@ -34,4 +34,5 @@ SELECT * FROM table_name; --> Select all columns in the table
 ```
 where column1 and column2 are the field names of the table from which you want to select the data
 
-![alt text](https://subir-imagen.com/i/m4O0S)
+![1](https://user-images.githubusercontent.com/76973247/190880810-856e854e-6ef1-4b08-b26d-6d3699b23f1e.png)
+
