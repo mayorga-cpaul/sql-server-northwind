@@ -1,3 +1,6 @@
+## Table of Contents
+1. [Studying SQL Server](#Studying SQL Server)
+2. [Select](#Select)
 
 # **Studying SQL Server** 📝  
 
