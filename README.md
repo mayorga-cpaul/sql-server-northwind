@@ -156,3 +156,37 @@ VALUES (09999, 'Seattle', 2)
 ```
 ![INSERT INTO](https://user-images.githubusercontent.com/76973247/190886042-d17057d1-b85b-4a90-b2af-f87566b323be.png)
 
+## **NULL values** 
+
+>What is a NULL Value?
+>A field with a NULL value is a field with no value.
+
+>If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field. Then, the field will be saved with a NULL value.
+
+>Note: A NULL value is different from a zero value or a field that contains spaces. A field with a NULL value is one that has been left blank during record creation!
+>How to Test for NULL Values?
+>It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
+>We will have to use the IS NULL and IS NOT NULL operators instead.
+
+```
+IS NULL Syntax
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+IS NOT NULL Syntax
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+
+```
+USE Northwind
+GO 
+
+SELECT * FROM Employees WHERE Region IS NULL
+```
+![null](https://user-images.githubusercontent.com/76973247/190886490-66015fa9-7734-4920-8d6e-61ac73bf1fb7.png)
+
+
+
+
