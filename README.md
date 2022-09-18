@@ -34,7 +34,7 @@ SELECT * FROM table_name; --> Select all columns in the table
 ```
 where column1 and column2 are the field names of the table from which you want to select the data
 
-![alt text](https://subir-imagen.com/i/m4O0S)
+![1](https://user-images.githubusercontent.com/76973247/190881861-eb571e32-3839-4eb1-8d43-be0da8726c97.png)
 
 ## **The SQL SELECT DISTINCT Statement**
 
@@ -47,7 +47,7 @@ FROM table_name;
 ```
 > Below is a selection from the "Customers" table in the Northwind sample database:
 
-![alt text](https://subir-imagen.com/i/DISTINCT)
+![Distinct](https://user-images.githubusercontent.com/76973247/190881864-a29a8d19-826a-4568-aca3-dca23bb9f1a3.png)
 
 ## **The SQL WHERE Clause**
 
@@ -62,7 +62,7 @@ WHERE condition;
 ```  
 **Note:** The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
 
-![alt text](https://subir-imagen.com/i/WHERE)
+![WHERE](https://user-images.githubusercontent.com/76973247/190881866-08787e4e-47e6-44fb-bf82-9972b38b8d69.png)
 
 ## **SQL AND OR NOT**
 
