@@ -786,6 +786,43 @@ A selection from the result set may look like this:
 
 >Note: The FULL OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not. So, if there are rows in "Customers" that do not have matches in "Orders", or if there are rows in "Orders" that do not have matches in "Customers", those rows will be listed as well.
 
+## **SQL Self Join**
+
+A self join is a regular join, but the table is joined with itself.
+
+Self Join Syntax
+
+```
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+```
+
+T1 and T2 are different table aliases for the same table.
+
+Demo Database
+In this tutorial we will use the well-known Northwind sample database.
+
+Below is a selection from the "Customers" table:
+
+|CustomerID|	CustomerName	|ContactName|	Address|	City|	PostalCode|	Country|
+| :------------ |:---------------:|:------------ |:---------------:| :------------ |:---------------:|:---------------:|
+|1 | Alfreds Futterkiste|	Maria Anders|	Obere Str. 57|	Berlin	|12209|	Germany|
+|2	|Ana Trujillo Emparedados y helados|	Ana Trujillo|	Avda. de la Constitución 2222|	México D.F.	|05021	|Mexico|
+|3	|Antonio Moreno Taquería	|Antonio Moreno|	Mataderos 2312|	México D.F.|	05023|	Mexico|
+
+SQL Self Join Example
+The following SQL statement matches customers that are from the same city:
+
+Example
+```
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+```
+
 ## Key references in SQL
  ```
 In SQL, keywords are the reserved words that are used to perform various operations on the database. There are many keywords in SQL and since SQL is not case sensitive, it does not matter if we use, for example, SELECT or select. LIST OF SQL keywords
