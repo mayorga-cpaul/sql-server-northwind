@@ -34,8 +34,6 @@ SELECT * FROM table_name; --> Select all columns in the table
 ```
 where column1 and column2 are the field names of the table from which you want to select the data
 
-![1](https://user-images.githubusercontent.com/76973247/190881861-eb571e32-3839-4eb1-8d43-be0da8726c97.png)
-
 ## **The SQL SELECT DISTINCT Statement**
 
 The statement is used to return only different (different) values. SELECT DISTINCT
@@ -46,8 +44,6 @@ SELECT DISTINCT column1, column2, ...
 FROM table_name;
 ```
 > Below is a selection from the "Customers" table in the Northwind sample database:
-
-![Distinct](https://user-images.githubusercontent.com/76973247/190881864-a29a8d19-826a-4568-aca3-dca23bb9f1a3.png)
 
 ## **The SQL WHERE Clause**
 
@@ -61,8 +57,6 @@ FROM table_name
 WHERE condition;
 ```  
 **Note:** The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
-
-![WHERE](https://user-images.githubusercontent.com/76973247/190881866-08787e4e-47e6-44fb-bf82-9972b38b8d69.png)
 
 ## **SQL AND OR NOT**
 
@@ -81,8 +75,6 @@ SELECT * FROM Customers
 WHERE ContactName = 'Hanna Moos' AND Country = 'Germany'
 ```
 
-![AND](https://user-images.githubusercontent.com/76973247/190881701-af85f16b-fdc2-4c79-9db3-62f36054bad1.png)
-
 ```
 USE Northwind
 Go
@@ -90,7 +82,6 @@ Go
 SELECT * FROM Customers 
 WHERE ContactName = 'Hanna Moos' OR Country = 'Germany'
 ```
-![OR](https://user-images.githubusercontent.com/76973247/190881725-9b592418-fb54-451a-a4a3-6cc8c1d64f56.png)
 
 ```
 USE Northwind
@@ -98,7 +89,6 @@ GO
 
 SElECT * FROM Customers WHERE NOT City = 'Berlin'
 ```
-![OR](https://user-images.githubusercontent.com/76973247/190881789-d153abaf-16e7-470f-930c-46725cff4ccd.png)
 
 ## **SQL ORDER BY Keyword**
 
@@ -119,7 +109,6 @@ SELECT LastName, FirstName, Address
 FROM Employees 
 ORDER BY LastName ASC
 ```
-![ORDER BY](https://user-images.githubusercontent.com/76973247/190886064-4b3647ee-2c5b-4368-a216-0e4fe059e53f.png)
 
 *  Order by value desc
 
@@ -131,8 +120,6 @@ SELECT LastName, FirstName, Address
 FROM Employees 
 ORDER BY LastName DESC
 ```
-![DESC](https://user-images.githubusercontent.com/76973247/190886047-72747938-4137-4beb-9828-1577fc7afb7b.png)
-
 
 ## **SQL INSERT INTO Statement**
 
@@ -154,8 +141,6 @@ GO
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
 VALUES (09999, 'Seattle', 2)
 ```
-![INSERT INTO](https://user-images.githubusercontent.com/76973247/190886042-d17057d1-b85b-4a90-b2af-f87566b323be.png)
-
 ## **NULL values** 
 
 >What is a NULL Value?
@@ -185,7 +170,6 @@ GO
 
 SELECT * FROM Employees WHERE Region IS NULL
 ```
-![null](https://user-images.githubusercontent.com/76973247/190886490-66015fa9-7734-4920-8d6e-61ac73bf1fb7.png)
 
 ## **UPDATE**
 
